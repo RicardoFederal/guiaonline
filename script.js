@@ -1,3 +1,7 @@
+function limparFormulario() {
+    location.reload(); // Recarregar a página.
+}
+
 function mostrarpergunta1(event) {
     event.preventDefault(); // Evita o comportamento padrão (recarregar a página)
 
@@ -7,6 +11,8 @@ function mostrarpergunta1(event) {
     for (let button of buttons) {
         button.style.visibility = 'visible';
     }
+
+    limpar1.style.visibility = 'visible';
 
     // Adiciona a classe 'pressionado' ao botão de "Pós-Graduação"
     let btnPosgrad = document.getElementById('btnPosgrad');
@@ -22,6 +28,9 @@ function mostrarpergunta3(event) {
     for (let button of buttons) {
         button.style.visibility = 'visible';
     }
+
+    limpar1.style.visibility = 'hidden';
+    limpar2.style.visibility = 'visible';
 
     // Adiciona a classe 'pressionado' ao botão de "Outro Estado"
     let btnOutroEstado = document.getElementById('btnOutroEstado');
@@ -52,4 +61,7 @@ function mostrarResposta1(event) {
     let btnRevisao = document.getElementById('btnRevisao');
     btnRevisao.classList.add('desabilitado');  // Adiciona a classe de desabilitado
     btnRevisao.disabled = true;  // Impede a interação com o botão
+
+    limpar2.style.visibility = 'hidden';
+    limpar3.style.visibility = 'visible';
 }

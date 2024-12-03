@@ -7,9 +7,13 @@ h1 {
     text-align: center;
 }
 
+div {
+    vertical-align: middle;
+}
+
 button {
     color: blue;
-    width: 200px;
+    width: 165px;
 }
 
 /* Efeito de botão pressionado */
@@ -40,4 +44,9 @@ button {
     transform: scale(0.95);
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
     background-color: #ccc;
+}
+
+.limpar {
+    width: 47px;
+    color: red;
 }

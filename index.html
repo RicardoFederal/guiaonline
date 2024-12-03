@@ -12,14 +12,20 @@
     <form>
         <div>
             <button id="btnPosgrad" type="button" onclick="mostrarpergunta1(event)">Pós-Graduação</button>
+            <button id="2" type="button" onclick="">Mestrado/Doutorado</button>
+            <button id="3" type="button" onclick="">Georeferenciamento</button>
             <br><br>
             <button id="btnEscolaSP" type="button" class="pergunta1" style="visibility: hidden;">Escola São Paulo</button>
             <button id="btnOutroEstado" type="button" class="pergunta1" style="visibility: hidden;" onclick="mostrarpergunta3(event)">Outro Estado</button>
+            <button id="limpar1" type="button" class="limpar" style="visibility: hidden;" onclick="limparFormulario()">voltar</button>
             <br><br>
             <button id="btnAnotacao" type="button" class="pergunta2" style="visibility: hidden;" onclick="mostrarResposta1(event)">Anotação</button>
-            <button id="btnRevisao" type="button" class="pergunta2" style="visibility: hidden;">Revisão Atribuições</button>
+            <button id="btnRevisao" type="button" class="pergunta2" style="visibility: hidden;">Revisão de Atribuições</button>
+            <button id="limpar2" type="button" class="limpar" style="visibility: hidden;" onclick="limparFormulario()">voltar</button>
             <br><br>
             <textarea id="meuTextarea" rows="10" cols="50" disabled style="visibility: hidden;"></textarea>
+            <br><br>
+            <button id="limpar3" type="button" class="limpar" style="visibility: hidden;" onclick="limparFormulario()">voltar</button>
         </div>
     </form>
 </body>

@@ -36,12 +36,13 @@ function mostrarpergunta3(event) {
 function mostrarResposta1(event) {
     event.preventDefault();
 
-    //let buttons = document.getElementsByClassName('pergunta2');
+    let textArea = document.getElementById('meuTextarea');
+    textArea.style.visibility = 'visible';
 
-    // Percorre os botões e altera a visibilidade de cada um
-    //for (let button of buttons) {
-        //button.style.visibility = 'visible';
-    //}
+    let texto = "1. Consultar o CREA de Origem;\n2. Mandar email para o IES@ com a resposta;\n\nCaso o curso não esteja cadastrado:\n\n1. Mandar email para o IES@ para criarmos o curso e vincular a atribuição 'Sem Atribuição' ao profissional.";
+            
+    // Acessa o textarea pelo ID e preenche com o texto
+    document.getElementById('meuTextarea').value = texto;
 
     // Adiciona a classe 'pressionado' ao botão de "Anotação"
     let btnAnotacao = document.getElementById('btnAnotacao');

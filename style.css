@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color:green;
+    text-align: center;
+}
+
+button {
+    color: blue;
+    width: 200px;
+}
+
+/* Efeito de botão pressionado */
+.pressionado {
+    transform: scale(0.95); /* Diminui o tamanho do botão */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra interna para efeito de pressionado */
+    background-color: #ccc; /* Cor de fundo ao pressionar */
+}
+
+/* Efeito de botão desabilitado */
+.desabilitado {
+    background-color: #bbb; /* Cor de fundo mais escura */
+    color: #777; /* Texto mais suave */
+    cursor: not-allowed; /* Cursor de "não permitido" */
+    opacity: 0.7; /* Opacidade reduzida */
+    border: 2px solid #bbb; /* Borda mais suave */
+}
+
+
+/* Efeito ao clicar com :active (pressionar o botão) */
+#btnPosgrad:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #ccc;
+}
+
+#btnOutroEstado:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #ccc;
+}

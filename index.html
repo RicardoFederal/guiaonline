@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Online</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Guia Online</h1>
+    <form>
+        <div>
+            <button id="btnPosgrad" type="button" onclick="mostrarpergunta1(event)">Pós-Graduação</button>
+            <br><br>
+            <button id="btnEscolaSP" type="button" class="pergunta1" style="visibility: hidden;">Escola São Paulo</button>
+            <button id="btnOutroEstado" type="button" class="pergunta1" style="visibility: hidden;" onclick="mostrarpergunta3(event)">Outro Estado</button>
+            <br><br>
+            <button id="btnAnotacao" type="button" class="pergunta2" style="visibility: hidden;" onclick="mostrarResposta1(event)">Anotação</button>
+            <button id="btnRevisao" type="button" class="pergunta2" style="visibility: hidden;">Revisão Atribuições</button>
+        </div>
+    </form>
+</body>
+</html>
